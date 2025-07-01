@@ -25,115 +25,15 @@
                     <div class="diagram-container">
                         <div class="diagram-header">
                             <h2>Enhanced MCP Flow Diagram</h2>
-                            <div class="diagram-controls">
-                                <button class="btn btn--secondary" id="copyCodeBtn">
-                                    <span class="copy-icon">📋</span>
-                                    Copy Code
-                                </button>
-                                <button class="btn btn--outline" id="toggleViewBtn">
-                                    Toggle View
-                                </button>
-                            </div>
                         </div>
                         <div class="diagram-content" id="diagramContainer">
                             <div class="mermaid" id="mermaidDiagram"></div>
                         </div>
                     </div>
                 </section>
-
-                <!-- Improvements Section -->
-                <section class="improvements-section">
-                    <div class="card">
-                        <div class="card__header">
-                            <h3>Dark Theme Improvements</h3>
-                        </div>
-                        <div class="card__body">
-                            <div class="improvements-grid">
-                                <div class="improvement-item">
-                                    <div class="improvement-icon">🎨</div>
-                                    <div class="improvement-content">
-                                        <h4>Professional Dark Theme</h4>
-                                        <p>Proper contrast ratios and accessibility compliance</p>
-                                    </div>
-                                </div>
-                                <div class="improvement-item">
-                                    <div class="improvement-icon">👁️</div>
-                                    <div class="improvement-content">
-                                        <h4>Eye-Strain Reduction</h4>
-                                        <p>Avoids pure black and white for better readability</p>
-                                    </div>
-                                </div>
-                                <div class="improvement-item">
-                                    <div class="improvement-icon">🌈</div>
-                                    <div class="improvement-content">
-                                        <h4>Muted Color Palette</h4>
-                                        <p>Subtle variations to distinguish different phases</p>
-                                    </div>
-                                </div>
-                                <div class="improvement-item">
-                                    <div class="improvement-icon">⚡</div>
-                                    <div class="improvement-content">
-                                        <h4>Custom Mermaid Theme</h4>
-                                        <p>Tailored theme variables for consistent appearance</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Code Section -->
-                <section class="code-section">
-                    <div class="card">
-                        <div class="card__header">
-                            <h3>Mermaid Code</h3>
-                            <span class="status status--success">Dark Theme</span>
-                        </div>
-                        <div class="card__body">
-                            <div class="code-container">
-                                <pre><code id="codeDisplay"></code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Color Comparison -->
-                <section class="color-section">
-                    <div class="card">
-                        <div class="card__header">
-                            <h3>Color Comparison</h3>
-                        </div>
-                        <div class="card__body">
-                            <div class="color-comparison">
-                                <div class="color-group">
-                                    <h4>Original Colors</h4>
-                                    <div class="color-palette" id="originalColors"></div>
-                                </div>
-                                <div class="color-group">
-                                    <h4>Dark Theme Colors</h4>
-                                    <div class="color-palette" id="darkColors"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </div>
         </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <p>&copy; 2025 MCP Diagram Enhancement. Professional dark theme implementation.</p>
-            </div>
-        </footer>
     </div>
-
-    <!-- Copy notification -->
-    <div class="notification" id="copyNotification">
-        <span class="notification__icon">✅</span>
-        <span class="notification__text">Code copied to clipboard!</span>
-    </div>
-
     <script src="app.js"></script>
 </body>
 </html>
