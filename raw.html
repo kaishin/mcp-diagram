@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCP Sequence Diagram - Dark Theme</title>
+    <link rel="stylesheet" href="style.css?v=2" />
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="container">
+          <h1 class="header__title">MCP Sequence Diagram</h1>
+          <p class="header__subtitle">
+            Model Context Protocol - Enhanced Dark Theme
+          </p>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main">
+        <div class="container">
+          <!-- Diagram Section -->
+          <section class="diagram-section">
+            <div class="diagram-container">
+              <div class="diagram-header">
+                <h2>Enhanced MCP Flow Diagram</h2>
+              </div>
+              <div class="diagram-content" id="diagramContainer">
+                <div class="mermaid" id="mermaidDiagram"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

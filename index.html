@@ -1,39 +1,690 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCP Sequence Diagram - Dark Theme</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How MCP Works</title>
+    <link rel="stylesheet" href="style.css?v=3" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="app-container">
-        <!-- Header -->
-        <header class="header">
-            <div class="container">
-                <h1 class="header__title">MCP Sequence Diagram</h1>
-                <p class="header__subtitle">Model Context Protocol - Enhanced Dark Theme</p>
-            </div>
-        </header>
+      <!-- Main Content -->
+      <main class="main">
+        <div class="container">
+          <!-- Diagram Section -->
+          <section class="diagram-section">
+            <div class="diagram-container">
+              <div class="diagram-header">
+                <h2>Enhanced MCP Flow Diagram</h2>
+              </div>
 
-        <!-- Main Content -->
-        <main class="main">
-            <div class="container">
-                <!-- Diagram Section -->
-                <section class="diagram-section">
-                    <div class="diagram-container">
-                        <div class="diagram-header">
-                            <h2>Enhanced MCP Flow Diagram</h2>
-                        </div>
-                        <div class="diagram-content" id="diagramContainer">
-                            <div class="mermaid" id="mermaidDiagram"></div>
-                        </div>
-                    </div>
-                </section>
+              <div class="diagram-content" id="diagramContainer">
+                <svg
+                  class="diagram-svg"
+                  viewBox="-50 -10 1181 1557"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <linearGradient
+                      id="actor-gradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="0%"
+                      y2="100%"
+                    >
+                      <stop
+                        offset="0%"
+                        style="stop-color: #2a2a2a; stop-opacity: 1"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: #1c1c1c; stop-opacity: 1"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="border-gradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="0%"
+                      y2="100%"
+                    >
+                      <stop
+                        offset="0%"
+                        style="stop-color: rgba(255, 255, 255, 0.5)"
+                      />
+                      <stop
+                        offset="100%"
+                        style="stop-color: rgba(255, 255, 255, 0)"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="phase-gradient-1"
+                      x1="0%"
+                      y1="0%"
+                      x2="0%"
+                      y2="100%"
+                    >
+                      <stop
+                        offset="0%"
+                        stop-color="#00AEEF"
+                        stop-opacity="0.25"
+                      />
+                      <stop
+                        offset="100%"
+                        stop-color="#00AEEF"
+                        stop-opacity="0.15"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="phase-gradient-2"
+                      x1="0%"
+                      y1="0%"
+                      x2="0%"
+                      y2="100%"
+                    >
+                      <stop
+                        offset="0%"
+                        stop-color="#EC008C"
+                        stop-opacity="0.25"
+                      />
+                      <stop
+                        offset="100%"
+                        stop-color="#EC008C"
+                        stop-opacity="0.15"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="phase-gradient-3"
+                      x1="0%"
+                      y1="0%"
+                      x2="0%"
+                      y2="100%"
+                    >
+                      <stop
+                        offset="0%"
+                        stop-color="#F7941D"
+                        stop-opacity="0.25"
+                      />
+                      <stop
+                        offset="100%"
+                        stop-color="#F7941D"
+                        stop-opacity="0.15"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="phase-gradient-4"
+                      x1="0%"
+                      y1="0%"
+                      x2="0%"
+                      y2="100%"
+                    >
+                      <stop
+                        offset="0%"
+                        stop-color="#8DC63F"
+                        stop-opacity="0.25"
+                      />
+                      <stop
+                        offset="100%"
+                        stop-color="#8DC63F"
+                        stop-opacity="0.15"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="phase-gradient-5"
+                      x1="0%"
+                      y1="0%"
+                      x2="0%"
+                      y2="100%"
+                    >
+                      <stop
+                        offset="0%"
+                        stop-color="#662D91"
+                        stop-opacity="0.25"
+                      />
+                      <stop
+                        offset="100%"
+                        stop-color="#662D91"
+                        stop-opacity="0.15"
+                      />
+                    </linearGradient>
+                    <linearGradient
+                      id="phase-gradient-6"
+                      x1="0%"
+                      y1="0%"
+                      x2="0%"
+                      y2="100%"
+                    >
+                      <stop
+                        offset="0%"
+                        stop-color="#00BFF3"
+                        stop-opacity="0.25"
+                      />
+                      <stop
+                        offset="100%"
+                        stop-color="#00BFF3"
+                        stop-opacity="0.15"
+                      />
+                    </linearGradient>
+                    <marker
+                      orient="auto"
+                      markerHeight="12"
+                      markerWidth="12"
+                      markerUnits="userSpaceOnUse"
+                      refY="5"
+                      refX="7.9"
+                      id="arrowhead"
+                    >
+                      <path d="M 0 0 L 10 5 L 0 10 z"></path>
+                    </marker>
+                  </defs>
+
+                  <!-- Phase Backgrounds -->
+                  <g class="phase-backgrounds">
+                    <rect
+                      class="phase-bg-6"
+                      height="165"
+                      width="528"
+                      y="1286"
+                      x="287"
+                    ></rect>
+                    <rect
+                      class="phase-bg-5"
+                      height="165"
+                      width="799"
+                      y="1111"
+                      x="40"
+                    ></rect>
+                    <rect
+                      class="phase-bg-4"
+                      height="309"
+                      width="753"
+                      y="792"
+                      x="287"
+                    ></rect>
+                    <rect
+                      class="phase-bg-3"
+                      height="213"
+                      width="799"
+                      y="569"
+                      x="40"
+                    ></rect>
+                    <rect
+                      class="phase-bg-2"
+                      height="261"
+                      width="352"
+                      y="298"
+                      x="287"
+                    ></rect>
+                    <rect
+                      class="phase-bg-1"
+                      height="213"
+                      width="352"
+                      y="75"
+                      x="287"
+                    ></rect>
+                  </g>
+
+                  <!-- Lifelines -->
+                  <g class="lifelines">
+                    <line
+                      class="lifeline"
+                      y2="1471"
+                      x2="1005"
+                      y1="5"
+                      x1="1005"
+                    ></line>
+                    <line
+                      class="lifeline"
+                      y2="1471"
+                      x2="804"
+                      y1="5"
+                      x1="804"
+                    ></line>
+                    <line
+                      class="lifeline"
+                      y2="1471"
+                      x2="604"
+                      y1="5"
+                      x1="604"
+                    ></line>
+                    <line
+                      class="lifeline"
+                      y2="1471"
+                      x2="322"
+                      y1="5"
+                      x1="322"
+                    ></line>
+                    <line
+                      class="lifeline"
+                      y2="1471"
+                      x2="75"
+                      y1="5"
+                      x1="75"
+                    ></line>
+                  </g>
+
+                  <!-- Actors -->
+                  <g class="actors">
+                    <g class="actor-group">
+                      <rect
+                        class="actor-box"
+                        ry="12"
+                        rx="12"
+                        height="65"
+                        width="152"
+                        y="0"
+                        x="929"
+                      ></rect>
+                      <text class="actor-text" y="32.5" x="1005">
+                        Data / API
+                      </text>
+                    </g>
+                    <g class="actor-group">
+                      <rect
+                        class="actor-box"
+                        ry="12"
+                        rx="12"
+                        height="65"
+                        width="150"
+                        y="0"
+                        x="729"
+                      ></rect>
+                      <text class="actor-text" y="32.5" x="804">LLM</text>
+                    </g>
+                    <g class="actor-group">
+                      <rect
+                        class="actor-box"
+                        ry="12"
+                        rx="12"
+                        height="65"
+                        width="150"
+                        y="0"
+                        x="529"
+                      ></rect>
+                      <text class="actor-text" y="32.5" x="604">
+                        MCP Server
+                      </text>
+                    </g>
+                    <g class="actor-group">
+                      <rect
+                        class="actor-box"
+                        ry="12"
+                        rx="12"
+                        height="65"
+                        width="150"
+                        y="0"
+                        x="247"
+                      ></rect>
+                      <text class="actor-text" y="32.5" x="322">
+                        MCP Client
+                      </text>
+                    </g>
+                    <g class="actor-group">
+                      <rect
+                        class="actor-box"
+                        ry="12"
+                        rx="12"
+                        height="65"
+                        width="150"
+                        y="0"
+                        x="0"
+                      ></rect>
+                      <text class="actor-text" y="32.5" x="75">User</text>
+                    </g>
+                  </g>
+
+                  <!-- Notes -->
+                  <g class="notes">
+                    <g class="note-group">
+                      <rect
+                        class="note-box"
+                        ry="8"
+                        rx="8"
+                        height="39"
+                        width="332"
+                        y="95"
+                        x="297"
+                      ></rect>
+                      <text class="note-text" y="114.5" x="463">
+                        Initialization Phase
+                      </text>
+                    </g>
+                    <g class="note-group">
+                      <rect
+                        class="note-box"
+                        ry="8"
+                        rx="8"
+                        height="39"
+                        width="332"
+                        y="318"
+                        x="297"
+                      ></rect>
+                      <text class="note-text" y="337.5" x="463">
+                        Discovery Phase
+                      </text>
+                    </g>
+                    <g class="note-group">
+                      <rect
+                        class="note-box"
+                        ry="8"
+                        rx="8"
+                        height="39"
+                        width="779"
+                        y="589"
+                        x="50"
+                      ></rect>
+                      <text class="note-text" y="608.5" x="440">
+                        Query Processing Phase
+                      </text>
+                    </g>
+                    <g class="note-group">
+                      <rect
+                        class="note-box"
+                        ry="8"
+                        rx="8"
+                        height="39"
+                        width="733"
+                        y="812"
+                        x="297"
+                      ></rect>
+                      <text class="note-text" y="831.5" x="664">
+                        Tool Execution Phase
+                      </text>
+                    </g>
+                    <g class="note-group">
+                      <rect
+                        class="note-box"
+                        ry="8"
+                        rx="8"
+                        height="39"
+                        width="779"
+                        y="1131"
+                        x="50"
+                      ></rect>
+                      <text class="note-text" y="1150.5" x="440">
+                        Response Phase
+                      </text>
+                    </g>
+                    <g class="note-group">
+                      <rect
+                        class="note-box"
+                        ry="8"
+                        rx="8"
+                        height="39"
+                        width="332"
+                        y="1306"
+                        x="297"
+                      ></rect>
+                      <text class="note-text" y="1325.5" x="463">
+                        Optional: Real-time Updates
+                      </text>
+                    </g>
+                  </g>
+
+                  <!-- Messages -->
+                  <g class="messages">
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="182"
+                        x2="600"
+                        y1="182"
+                        x1="323"
+                      ></line>
+                      <text class="message-text" y="172" x="462">
+                        Connect/Handshake
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="230"
+                        x2="326"
+                        y1="230"
+                        x1="603"
+                      ></line>
+                      <text class="message-text" y="220" x="465">
+                        Protocol Version &amp; Capabilities
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="278"
+                        x2="600"
+                        y1="278"
+                        x1="323"
+                      ></line>
+                      <text class="message-text" y="268" x="462">
+                        Confirm Connection
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="405"
+                        x2="600"
+                        y1="405"
+                        x1="323"
+                      ></line>
+                      <text class="message-text" y="395" x="462">
+                        List Available Tools
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="453"
+                        x2="326"
+                        y1="453"
+                        x1="603"
+                      ></line>
+                      <text class="message-text" y="443" x="465">
+                        Tool Definitions
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="501"
+                        x2="600"
+                        y1="501"
+                        x1="323"
+                      ></line>
+                      <text class="message-text" y="491" x="462">
+                        List Available Resources
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="549"
+                        x2="326"
+                        y1="549"
+                        x1="603"
+                      ></line>
+                      <text class="message-text" y="539" x="465">
+                        Resource Metadata
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="676"
+                        x2="318"
+                        y1="676"
+                        x1="76"
+                      ></line>
+                      <text class="message-text" y="666" x="197">
+                        Submit Query
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="724"
+                        x2="800"
+                        y1="724"
+                        x1="323"
+                      ></line>
+                      <text class="message-text" y="714" x="562">
+                        Query + Available Tools/Resources
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="772"
+                        x2="326"
+                        y1="772"
+                        x1="803"
+                      ></line>
+                      <text class="message-text" y="762" x="565">
+                        Analysis + Tool Recommendations
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="899"
+                        x2="600"
+                        y1="899"
+                        x1="323"
+                      ></line>
+                      <text class="message-text" y="889" x="462">
+                        Execute Tool Request
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="947"
+                        x2="1001"
+                        y1="947"
+                        x1="605"
+                      ></line>
+                      <text class="message-text" y="937" x="803">
+                        Access External Data
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="995"
+                        x2="608"
+                        y1="995"
+                        x1="1004"
+                      ></line>
+                      <text class="message-text" y="985" x="806">
+                        Return Data
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="1043"
+                        x2="326"
+                        y1="1043"
+                        x1="603"
+                      ></line>
+                      <text class="message-text" y="1033" x="465">
+                        Tool Results
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="1091"
+                        x2="800"
+                        y1="1091"
+                        x1="323"
+                      ></line>
+                      <text class="message-text" y="1081" x="562">
+                        Enhanced Context + Tool Results
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="1218"
+                        x2="326"
+                        y1="1218"
+                        x1="803"
+                      ></line>
+                      <text class="message-text" y="1208" x="565">
+                        Generated Response
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="1266"
+                        x2="79"
+                        y1="1266"
+                        x1="321"
+                      ></line>
+                      <text class="message-text" y="1256" x="200">
+                        Final Enhanced Response
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="1393"
+                        x2="326"
+                        y1="1393"
+                        x1="603"
+                      ></line>
+                      <text class="message-text" y="1383" x="465">
+                        Resource Change Notification
+                      </text>
+                    </g>
+                    <g class="message-group">
+                      <line
+                        class="message-line"
+                        marker-end="url(#arrowhead)"
+                        y2="1441"
+                        x2="800"
+                        y1="1441"
+                        x1="323"
+                      ></line>
+                      <text class="message-text" y="1431" x="562">
+                        Update Context
+                      </text>
+                    </g>
+                  </g>
+                </svg>
+              </div>
             </div>
-        </main>
+          </section>
+        </div>
+      </main>
     </div>
-    <script src="app.js"></script>
-</body>
+  </body>
 </html>
